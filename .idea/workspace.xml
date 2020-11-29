@@ -8,9 +8,33 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b2613a4-c44c-49cb-aaa8-b79a73296e7a" name="Default Changelist" comment="commit1">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+    <list default="true" id="2b2613a4-c44c-49cb-aaa8-b79a73296e7a" name="Default Changelist" comment="commit_1">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/persistens.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ilyushenko/lab4/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ilyushenko/lab4/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/Users.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/ilyushenko/lab4/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/ilyushenko/lab4/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab4/WEB-INF/classes/org/ilyushenko/lab4/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab4/WEB-INF/classes/org/ilyushenko/lab4/controller/HomeController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,14 +72,27 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="E:/Microsoft Visio Professional 2016/SDK_Android" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/lesson" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.373" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.373" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -139,7 +176,8 @@
       <updated>1606300217058</updated>
       <workItem from="1606300218896" duration="563000" />
       <workItem from="1606642233755" duration="8478000" />
-      <workItem from="1606652261242" duration="1853000" />
+      <workItem from="1606652261242" duration="3187000" />
+      <workItem from="1606671030360" duration="5285000" />
     </task>
     <task id="LOCAL-00001" summary="commit1">
       <created>1606653543878</created>
@@ -155,21 +193,40 @@
       <option name="project" value="LOCAL" />
       <updated>1606653866826</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit_1">
+      <created>1606654187077</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606654187077</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit1" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit1" />
+    <MESSAGE value="commit_1" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit_1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="143" y="66" width="1089" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606644551281">
+    <state x="-81" y="28" width="1089" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606671319658">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state x="143" y="66" width="1089" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/78.0.1458.864@78.0.1458.864" timestamp="1606644551281" />
+    <state x="-81" y="28" width="1089" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/78.0.1458.864@78.0.1458.864" timestamp="1606671319658" />
     <state x="252" y="217" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606651372182">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
@@ -182,74 +239,82 @@
       <screen x="78" y="0" width="1458" height="864" />
     </state>
     <state x="415" y="69" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/78.0.1458.864@78.0.1458.864" timestamp="1606644538727" />
-    <state x="538" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606651429649">
+    <state x="538" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606672170403">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state x="538" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/78.0.1458.864@78.0.1458.864" timestamp="1606651429649" />
-    <state x="743" y="150" key="FileChooserDialogImpl" timestamp="1606653189470">
+    <state x="538" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/78.0.1458.864@78.0.1458.864" timestamp="1606672170403" />
+    <state x="743" y="150" key="FileChooserDialogImpl" timestamp="1606676095670">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state x="743" y="150" key="FileChooserDialogImpl/78.0.1458.864@78.0.1458.864" timestamp="1606653189470" />
+    <state x="743" y="150" key="FileChooserDialogImpl/78.0.1458.864@78.0.1458.864" timestamp="1606676095670" />
     <state x="686" y="330" width="403" height="204" key="Github.ShareDialog" timestamp="1606652702867">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
     <state x="686" y="330" width="403" height="204" key="Github.ShareDialog/78.0.1458.864@78.0.1458.864" timestamp="1606652702867" />
-    <state width="969" height="208" key="GridCell.Tab.0.bottom" timestamp="1606651897778">
+    <state width="969" height="208" key="GridCell.Tab.0.bottom" timestamp="1606676653595">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state width="969" height="208" key="GridCell.Tab.0.bottom/78.0.1458.864@78.0.1458.864" timestamp="1606651897778" />
-    <state width="969" height="208" key="GridCell.Tab.0.center" timestamp="1606651897778">
+    <state width="969" height="208" key="GridCell.Tab.0.bottom/78.0.1458.864@78.0.1458.864" timestamp="1606676653595" />
+    <state width="969" height="208" key="GridCell.Tab.0.center" timestamp="1606676653595">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state width="969" height="208" key="GridCell.Tab.0.center/78.0.1458.864@78.0.1458.864" timestamp="1606651897778" />
-    <state width="969" height="208" key="GridCell.Tab.0.left" timestamp="1606651897778">
+    <state width="969" height="208" key="GridCell.Tab.0.center/78.0.1458.864@78.0.1458.864" timestamp="1606676653595" />
+    <state width="969" height="208" key="GridCell.Tab.0.left" timestamp="1606676653595">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state width="969" height="208" key="GridCell.Tab.0.left/78.0.1458.864@78.0.1458.864" timestamp="1606651897778" />
-    <state width="969" height="208" key="GridCell.Tab.0.right" timestamp="1606651897778">
+    <state width="969" height="208" key="GridCell.Tab.0.left/78.0.1458.864@78.0.1458.864" timestamp="1606676653595" />
+    <state width="969" height="208" key="GridCell.Tab.0.right" timestamp="1606676653595">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state width="969" height="208" key="GridCell.Tab.0.right/78.0.1458.864@78.0.1458.864" timestamp="1606651897778" />
-    <state width="969" height="208" key="GridCell.Tab.1.bottom" timestamp="1606651897778">
+    <state width="969" height="208" key="GridCell.Tab.0.right/78.0.1458.864@78.0.1458.864" timestamp="1606676653595" />
+    <state width="969" height="208" key="GridCell.Tab.1.bottom" timestamp="1606676653615">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state width="969" height="208" key="GridCell.Tab.1.bottom/78.0.1458.864@78.0.1458.864" timestamp="1606651897778" />
-    <state width="969" height="208" key="GridCell.Tab.1.center" timestamp="1606651897778">
+    <state width="969" height="208" key="GridCell.Tab.1.bottom/78.0.1458.864@78.0.1458.864" timestamp="1606676653615" />
+    <state width="969" height="208" key="GridCell.Tab.1.center" timestamp="1606676653595">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state width="969" height="208" key="GridCell.Tab.1.center/78.0.1458.864@78.0.1458.864" timestamp="1606651897778" />
-    <state width="969" height="208" key="GridCell.Tab.1.left" timestamp="1606651897778">
+    <state width="969" height="208" key="GridCell.Tab.1.center/78.0.1458.864@78.0.1458.864" timestamp="1606676653595" />
+    <state width="969" height="208" key="GridCell.Tab.1.left" timestamp="1606676653595">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state width="969" height="208" key="GridCell.Tab.1.left/78.0.1458.864@78.0.1458.864" timestamp="1606651897778" />
-    <state width="969" height="208" key="GridCell.Tab.1.right" timestamp="1606651897778">
+    <state width="969" height="208" key="GridCell.Tab.1.left/78.0.1458.864@78.0.1458.864" timestamp="1606676653595" />
+    <state width="969" height="208" key="GridCell.Tab.1.right" timestamp="1606676653615">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state width="969" height="208" key="GridCell.Tab.1.right/78.0.1458.864@78.0.1458.864" timestamp="1606651897778" />
-    <state width="969" height="208" key="GridCell.Tab.2.bottom" timestamp="1606651897778">
+    <state width="969" height="208" key="GridCell.Tab.1.right/78.0.1458.864@78.0.1458.864" timestamp="1606676653615" />
+    <state width="969" height="208" key="GridCell.Tab.2.bottom" timestamp="1606676653615">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state width="969" height="208" key="GridCell.Tab.2.bottom/78.0.1458.864@78.0.1458.864" timestamp="1606651897778" />
-    <state width="969" height="208" key="GridCell.Tab.2.center" timestamp="1606651897778">
+    <state width="969" height="208" key="GridCell.Tab.2.bottom/78.0.1458.864@78.0.1458.864" timestamp="1606676653615" />
+    <state width="969" height="208" key="GridCell.Tab.2.center" timestamp="1606676653615">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state width="969" height="208" key="GridCell.Tab.2.center/78.0.1458.864@78.0.1458.864" timestamp="1606651897778" />
-    <state width="969" height="208" key="GridCell.Tab.2.left" timestamp="1606651897778">
+    <state width="969" height="208" key="GridCell.Tab.2.center/78.0.1458.864@78.0.1458.864" timestamp="1606676653615" />
+    <state width="969" height="208" key="GridCell.Tab.2.left" timestamp="1606676653615">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state width="969" height="208" key="GridCell.Tab.2.left/78.0.1458.864@78.0.1458.864" timestamp="1606651897778" />
-    <state width="969" height="208" key="GridCell.Tab.2.right" timestamp="1606651897778">
+    <state width="969" height="208" key="GridCell.Tab.2.left/78.0.1458.864@78.0.1458.864" timestamp="1606676653615" />
+    <state width="969" height="208" key="GridCell.Tab.2.right" timestamp="1606676653615">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state width="969" height="208" key="GridCell.Tab.2.right/78.0.1458.864@78.0.1458.864" timestamp="1606651897778" />
+    <state width="969" height="208" key="GridCell.Tab.2.right/78.0.1458.864@78.0.1458.864" timestamp="1606676653615" />
+    <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1606671691029">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state width="189" height="457" key="HiddenNamespacesPopup/78.0.1458.864@78.0.1458.864" timestamp="1606671691029" />
     <state x="316" y="77" key="SettingsEditor" timestamp="1606653364044">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
     <state x="316" y="77" key="SettingsEditor/78.0.1458.864@78.0.1458.864" timestamp="1606653364044" />
-    <state x="400" y="165" key="Vcs.Push.Dialog.v2" timestamp="1606653872606">
+    <state x="400" y="165" key="Vcs.Push.Dialog.v2" timestamp="1606654203831">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state x="400" y="165" key="Vcs.Push.Dialog.v2/78.0.1458.864@78.0.1458.864" timestamp="1606653872606" />
+    <state x="400" y="165" key="Vcs.Push.Dialog.v2/78.0.1458.864@78.0.1458.864" timestamp="1606654203831" />
+    <state x="412" y="301" width="312" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1606672631997">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state x="412" y="301" width="312" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/78.0.1458.864@78.0.1458.864" timestamp="1606672631997" />
     <state x="609" y="338" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1606654159893">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
