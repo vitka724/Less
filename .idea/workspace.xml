@@ -139,7 +139,7 @@
       <updated>1606300217058</updated>
       <workItem from="1606300218896" duration="563000" />
       <workItem from="1606642233755" duration="8478000" />
-      <workItem from="1606652261242" duration="1537000" />
+      <workItem from="1606652261242" duration="1853000" />
     </task>
     <task id="LOCAL-00001" summary="commit1">
       <created>1606653543878</created>
@@ -148,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606653543878</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit1">
+      <created>1606653866826</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606653866826</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,13 +246,13 @@
       <screen x="78" y="0" width="1458" height="864" />
     </state>
     <state x="316" y="77" key="SettingsEditor/78.0.1458.864@78.0.1458.864" timestamp="1606653364044" />
-    <state x="400" y="165" key="Vcs.Push.Dialog.v2" timestamp="1606653551827">
+    <state x="400" y="165" key="Vcs.Push.Dialog.v2" timestamp="1606653872606">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state x="400" y="165" key="Vcs.Push.Dialog.v2/78.0.1458.864@78.0.1458.864" timestamp="1606653551827" />
-    <state x="609" y="338" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1606653428231">
+    <state x="400" y="165" key="Vcs.Push.Dialog.v2/78.0.1458.864@78.0.1458.864" timestamp="1606653872606" />
+    <state x="609" y="338" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1606654159893">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state x="609" y="338" key="git4idea.remote.GitConfigureRemotesDialog/78.0.1458.864@78.0.1458.864" timestamp="1606653428231" />
+    <state x="609" y="338" key="git4idea.remote.GitConfigureRemotesDialog/78.0.1458.864@78.0.1458.864" timestamp="1606654159893" />
   </component>
 </project>
