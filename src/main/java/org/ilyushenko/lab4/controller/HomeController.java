@@ -15,45 +15,42 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.validation.Valid;
 import java.sql.SQLException;
-
+import java.util.ArrayList;
+import java.util.Collection;
 
 @Controller
 public class HomeController {
-    private final UserValidator userValidator;
+    @Autowired
+    private UserValidator userValidator;
     @Autowired
     private UserDAO userDAO;
 
-    public HomeController(UserValidator userValidator) {
-        this.userValidator = userValidator;
-    }
-
-    // private Collection<User> users = new ArrayList<>();
-    @GetMapping(value = "/")
+    @GetMapping("/")
     public String hello() {
-        return "Hello";
-    }
 
+        return "/Hello";
+    }
     @RequestMapping(value = "/users")
     public String getUsers(Model model) throws SQLException {
-        model.addAttribute("users", userDAO.getAll());
+        model.addAttribute( "users", userDAO.getAll() );
         return "Users";
     }
-
     @GetMapping(value = "/addUsers")
-    public String getSignUp(Model model) {
-        model.addAttribute("user", new User());
-        return "Sign_up";
+    public String getSignUp(Model model)
+    {
+        model.addAttribute( "user", new User(  ) );
+        return "/Sign_up";
     }
-
     @PostMapping(value = "/addUsers")
     public String getSignUp(@ModelAttribute @Valid User user, BindingResult result) throws SQLException {
-        userValidator.validate(user, result);
-        if (result.hasErrors()) {
-            return "Sign_up";
+        userValidator.validate( user, result);
+        if (result.hasErrors()){
+            return "/Sign_up";
         }
-       // userDAO.add(user);
+        userDAO.add(user);
         return "redirect:/users";
     }
 }
+
 
 
