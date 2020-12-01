@@ -21,7 +21,7 @@ public class UserDAO {
         //load db properties
         try (InputStream in = UserDAO.class.getClassLoader().getResourceAsStream("persistens.properties")) {
             Properties properties = new Properties();
-            properties.load( in );
+            properties.load(in);
             url = properties.getProperty("url");
             username = properties.getProperty("username");
             password = properties.getProperty("password");
@@ -36,17 +36,36 @@ public class UserDAO {
             sqlException.printStackTrace();
         }
     }
-    public List<User> getAll() throws SQLException{
+
+    public boolean getOne;
+
+    public List<User> getAll() throws SQLException {
         List<User> users = new ArrayList<>();
-        PreparedStatement ps = conn.prepareStatement("select * from users" );
+        PreparedStatement ps = conn.prepareStatement("select * from users");
         ResultSet rs = ps.executeQuery();
-        while (rs.next()){
+        while (rs.next()) {
             User user = new User();
-            user.setName( rs.getString(1) );
-            user.setSurname( rs.getString(2) );
-            user.setSurname( rs.getString(3) );
-            users.add( user );
+            user.setName(rs.getString(1));
+            user.setSurname(rs.getString(2));
+            user.setSurname(rs.getString(3));
+            users.add(user);
         }
         return users;
     }
-}
+
+    public User getOne(String email) {
+        try {
+            PreparedStatement ps = conn.prepareStatement("select * from users where email = ?");
+            ps.setString(1, email);
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()) {
+                User user = new User();
+                user.setName(rs.getString(1 ));
+                user.setSurname(rs.getString(2 ));
+                user.setEmail(rs.getString(3 ));
+                return user;
+            }
+        } catch (SQLException igonred) {
+        }
+        return null;
+    }}
