@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.validation.Valid;
-import java.sql.SQLException;
+//import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -31,7 +31,7 @@ public class HomeController {
         return "/Hello";
     }
     @RequestMapping(value = "/users")
-    public String getUsers(Model model) throws SQLException {
+    public String getUsers(Model model) {
         model.addAttribute( "users", userDAO.getAll() );
         return "Users";
     }
@@ -42,7 +42,7 @@ public class HomeController {
         return "/Sign_up";
     }
     @PostMapping(value = "/addUsers")
-    public String getSignUp(@ModelAttribute @Valid User user, BindingResult result) throws SQLException {
+    public String getSignUp(@ModelAttribute @Valid User user, BindingResult result) {
         userValidator.validate( user, result);
         if (result.hasErrors()){
             return "/Sign_up";

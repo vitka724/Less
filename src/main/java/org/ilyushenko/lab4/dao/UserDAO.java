@@ -87,12 +87,10 @@ public class UserDAO {
 
 
 
-   public void add(User user) throws SQLException{
-        PreparedStatement ps = conn.prepareStatement("insert into users values(?,?,?) ");
-        ps.setString(1, user.getName());
-        ps.setString(2, user.getSurname());
-        ps.setString(3, user.getEmail());
-        ps.execute();
+   public void add(User user) {
+        jdbcTemplate.update ("insert into users values(?,?,?) ",
+                user.getName(), user.getSurname(), user.getEmail() );
+
     }
 
 }
