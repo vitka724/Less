@@ -2,6 +2,7 @@ package org.ilyushenko.lab4.dao;
 
 import org.ilyushenko.lab4.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
@@ -18,13 +19,8 @@ public class UserDAO {
     private JdbcTemplate jdbcTemplate;
 
     public List<User> getAll(){
-        return jdbcTemplate.query("select * from users", (rs,rowNum) -> {
-            User user = new User();
-            user.setName(rs.getString(1 ));
-            user.setSurname(rs.getString(2 ));
-            user.setEmail(rs.getString(3 ));
-            return user;
-        });
+        return jdbcTemplate.query("select * from users", new BeanPropertyRowMapper<>(User.class)
+                   );
     }
    private static Connection conn;
 
