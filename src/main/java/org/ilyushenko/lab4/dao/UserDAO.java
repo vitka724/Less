@@ -62,9 +62,7 @@ public class UserDAO {
         }
         return users;
     }
-
-*/
-   public User getOne(String email) {
+ public User getOne(String email) {
         try {
             PreparedStatement ps = conn.prepareStatement("select * from users where email = ?");
             ps.setString(1, email);
@@ -79,6 +77,12 @@ public class UserDAO {
         } catch (SQLException igonred) {
         }
         return null;
+    }
+*/
+   public User getOne(String email) {
+        return  jdbcTemplate.query("select * from users where email = ?",
+               new Object[]{email}, new BeanPropertyRowMapper<>(User.class)
+        ) .stream().findAny().orElse(null);
     }
 
 
