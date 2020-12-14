@@ -1,6 +1,8 @@
 package org.ilyushenko.lab4.dao;
 
 import org.ilyushenko.lab4.model.User;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
@@ -12,9 +14,21 @@ import java.util.Properties;
 
 @Component
 public class UserDAO {
-    private static Connection conn;
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
 
-    static {
+    public List<User> getAll(){
+        return jdbcTemplate.query("select * from users", (rs,rowNum) -> {
+            User user = new User();
+            user.setName(rs.getString(1 ));
+            user.setSurname(rs.getString(2 ));
+            user.setEmail(rs.getString(3 ));
+            return user;
+        });
+    }
+   private static Connection conn;
+
+  /*  static {
         String url = null;
         String username = null;
         String password = null;
@@ -37,7 +51,7 @@ public class UserDAO {
         }
     }
 
-    public boolean getOne;
+  public boolean getOne;
 
     public List<User> getAll() throws SQLException {
         List<User> users = new ArrayList<>();
@@ -53,7 +67,8 @@ public class UserDAO {
         return users;
     }
 
-    public User getOne(String email) {
+*/
+   public User getOne(String email) {
         try {
             PreparedStatement ps = conn.prepareStatement("select * from users where email = ?");
             ps.setString(1, email);
@@ -70,11 +85,14 @@ public class UserDAO {
         return null;
     }
 
-    public void add(User user) throws SQLException{
+
+
+   public void add(User user) throws SQLException{
         PreparedStatement ps = conn.prepareStatement("insert into users values(?,?,?) ");
         ps.setString(1, user.getName());
         ps.setString(2, user.getSurname());
         ps.setString(3, user.getEmail());
         ps.execute();
     }
+
 }
