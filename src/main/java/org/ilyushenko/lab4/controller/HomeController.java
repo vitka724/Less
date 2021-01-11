@@ -5,25 +5,26 @@ import org.ilyushenko.lab4.dao.UserDAO;
 import org.ilyushenko.lab4.model.User;
 import org.ilyushenko.lab4.utils.UserValidator;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
+
 
 import javax.validation.Valid;
-//import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Collection;
+import java.sql.SQLException;
+
 
 @Controller
 public class HomeController {
-    @Autowired
-    private UserValidator userValidator;
+    @Qualifier("jdbcApiUserDAO")
+
     @Autowired
     private UserDAO userDAO;
+
+    @Autowired
+    private UserValidator userValidator;
 
     @GetMapping("/")
     public String hello() {
@@ -31,7 +32,7 @@ public class HomeController {
         return "/Hello";
     }
     @RequestMapping(value = "/users")
-    public String getUsers(Model model) {
+    public String getUsers(Model model) throws SQLException {
         model.addAttribute( "users", userDAO.getAll() );
         return "Users";
     }
@@ -42,7 +43,7 @@ public class HomeController {
         return "/Sign_up";
     }
     @PostMapping(value = "/addUsers")
-    public String getSignUp(@ModelAttribute @Valid User user, BindingResult result) {
+    public String getSignUp(@ModelAttribute @Valid User user, BindingResult result) throws SQLException {
         userValidator.validate( user, result);
         if (result.hasErrors()){
             return "/Sign_up";
